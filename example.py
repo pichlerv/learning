@@ -30,6 +30,7 @@ if __name__ == "__main__":
 
 	# output:
 	print >> sys.stderr, "%s loci on the input, %s loci remained (%s removed)." % (len(header)-1,len(columns)-1, len(header)-len(columns))
-	print "\t".join([header[i] for i in columns])
+	print("\t".join([header[i] for i in columns]))
 	for d in data:
-		print "\t".join([d[i] for i in columns])
+		print("\t".join([d[i] for i in columns]))
+		
