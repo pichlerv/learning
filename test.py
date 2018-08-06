@@ -78,5 +78,7 @@ def mostAliveDeadOrHibernatin(numberAlibve, numberDead, numberHibernate):
 #inner_array[inner_counter]
 
 cells = build3dMatrixOfCells()
+cells2 = build3dMatrixOfCells()
 whatIsMost = cellstatecounter(cells)
+whatIsMost2 = cellstatecounter(cells2)
 print ("2")
