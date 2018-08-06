@@ -1,7 +1,7 @@
 import random
-import numpy as np
-import time
-MATRIX_SIZE = 3
+
+
+MATRIX_SIZE = 15
 
 
 def is_cell_alive_dead_or_hibernating(cellValue):
@@ -45,9 +45,23 @@ def mostAliveDeadOrHibernatin(numberAlibve, numberDead, numberHibernate):
 
 
 #inner_array[inner_counter]
+
+'''from here for print'''
+import time
+import numpy as np
+import os
+np.set_printoptions(threshold=np.inf)
+
+def printMatrix(matrix):
+    os.system('cls')
+    print(np.matrix(cells))
+''' end of print '''
+
+''' creating multiple generations with time in betwee '''
 appLoop = 0
 while appLoop < 40:
     cells = build3dMatrixOfCells()
-    print(np.matrix(cells))
+    printMatrix(cells)
     time.sleep(0.5)
     appLoop += 1
+''' end of multiple generations here '''
